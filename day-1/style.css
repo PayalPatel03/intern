@@ -1,49 +1,60 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-image: url("pexels-clouds-1282314_1920.jpg");
-    background-position: 20%;
-    background-size: cover;
+body {
+  background-image: url("pexels-clouds-1282314_1920.jpg");
+  background-position: 20%;
+  background-size: cover;
 }
-h3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    color: rgb(71, 167, 104);
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  color: rgb(71, 167, 104);
 }
 /*html form*/
-form{
-    margin: 10px;
+form {
+  margin: 10px;
 }
 /*new section*/
-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+img {
+  border: solid 10px rgb(90, 66, 66);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+p {
     margin: 10px;
-    border: solid  10px rgb(90, 66, 66);
-}
-p{
-    display: inline-block;
-    outline-style: dashed;
-    outline-color: rgb(71, 167, 104);
+  display: inline-block;
+  outline-style: dashed;
+  outline-color: rgb(71, 167, 104);
 }
 
-/* grid image*/
-.grid{
-    display: grid;
-    gap: 15px;
-    padding: 15px;
+/* grid layout*/
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: rgb(56, 182, 190);
+  padding: 10px;
 }
-
-.grid img {
-  width: 150px;
-  height: 200px; 
-  border-radius: 8px; 
-
+.container div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+/*table*/
+table{
+    margin: 20px;
+}
+td{
+    
+    text-align: center;
+    padding: 10px
 }
 
