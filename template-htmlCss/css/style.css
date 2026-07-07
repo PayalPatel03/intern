@@ -260,62 +260,8 @@ nav ul li a:hover {
     display:block;
 }
 
-/* ================= CTA ================= */
 
-.cta{
-    width:90%;
-    margin:80px auto;
-    border-top:1px solid #e5e5e5;
-    border-bottom:1px solid #e5e5e5;
-    padding:60px 0;
-}
-
-.cta-box{
-    background:#f7f7f7;
-    padding:45px 50px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    border-radius:5px;
-}
-
-.cta-text{
-    width:75%;
-}
-
-.cta-text h3{
-    font-size:34px;
-    color:#1e73be;
-    margin-bottom:20px;
-    font-weight:600;
-}
-
-.cta-text h3 span{
-    font-weight:700;
-}
-
-.cta-text p{
-    font-size:20px;
-    color:#555;
-    line-height:1.8;
-}
-
-.cta-btn a{
-    display:inline-block;
-    padding:18px 35px;
-    background:#f33f3f;
-    color:#fff;
-    text-decoration:none;
-    border-radius:5px;
-    font-size:20px;
-    transition:.3s;
-}
-
-.cta-btn a:hover{
-    background:#222;
-}
-
-/* ================= Footer ================= */
+/*Footer */
 
 footer{
     width:90%;
@@ -324,10 +270,10 @@ footer{
 }
 
 footer p{
-    font-size:20px;
+    font-size:10px;
     color:#555;
     text-transform:uppercase;
-    letter-spacing:1px;
+    
 }
 
 footer span{
