@@ -9,82 +9,74 @@ body {
 }
 
 /* Header */
-header {
-  width: 100%;
-  height: 50px;
-  background: #222;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 40px;
-}
-.logo h2 {
-  color: #fff;
-  font-size: 15px;
-  font-weight: bolder;
+header{
+    width:100%;
+    min-height:70px;
+    background:#222;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 60px;
 }
 
-.logo span {
-  color: #ff3d3d;
+.logo h2{
+    color:#fff;
+    font-size:24px;
 }
 
-nav ul {
-  display: flex;
-  list-style: none;
+.logo span{
+    color:#ff3d3d;
 }
 
-nav ul li {
-  margin-left: 45px;
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 10px;
-  cursor: pointer;
+nav ul li{
+    margin:0;
 }
-nav ul li a:hover {
-  color: rgb(194, 36, 36);
-  text-decoration: underline;
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-size:16px;
 }
+
 /* Hero Section */
-.hero {
-  width: 100%;
-  height: 300px;
-  background-image: url("../images/slide_01.jpg");
-  opacity: 90%;
-  background-size: cover;
-  background-position: center;
-  position: relative;
+.hero{
+    width:100%;
+    min-height:500px;
+    background:url("../images/slide_01.jpg") center center/cover no-repeat;
+    position:relative;
 }
 
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.55);
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
 }
 
-.content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
+.content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    color:#fff;
+    width:90%;
 }
 
-.content h3 {
-  color: #ff3d3d;
-  font-size: 15px;
-  margin-bottom: 20px;
-  font-weight: bold;
+.content h3{
+    color:#ff3d3d;
+    font-size:22px;
+    margin-bottom:20px;
 }
 
-.content h1 {
-  font-size: 20px;
-  /* font-weight:700; */
-  letter-spacing: 5px;
+.content h1{
+    font-size:48px;
+    letter-spacing:5px;
 }
 
 /*Products section*/
@@ -112,13 +104,15 @@ nav ul li a:hover {
   font-weight: bold;
 }
 
-.container {
-    margin: 10px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
+.container{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(280px,1fr));
+    gap:30px;
+  
+    width:100%;
 
+    margin-top:30px;
+}
 /* Card */
 
 .card {
@@ -278,4 +272,178 @@ footer p{
 
 footer span{
     color:#f33f3f;
+}
+
+/*media query*/
+@media (max-width:992px){
+
+header{
+    padding:15px 30px;
+}
+
+.logo h2{
+    font-size:22px;
+}
+
+nav ul{
+    gap:20px;
+}
+
+.content h1{
+    font-size:38px;
+}
+
+.container{
+    grid-template-columns:repeat(2,1fr);
+     /* grid-template-columns:1fr; */
+}
+
+.about-container{
+    gap:30px;
+}
+
+}
+@media (max-width:768px){
+
+header{
+    /* flex-direction:column; */
+    padding:10px;
+}
+
+
+
+nav{
+    width:100%;
+}
+
+nav ul{
+    /* flex-direction:column; */
+    align-items:center;
+    /* gap:15px; */
+}
+
+.hero{
+    min-height:350px;
+}
+
+.content h3{
+    font-size:18px;
+}
+
+.content h1{
+    font-size:28px;
+    letter-spacing:3px;
+}
+
+.product-heading{
+    /* flex-direction:column; */
+    align-items:flex-start;
+    gap:10px;
+}
+
+
+.container{
+    /* grid-template-columns:1fr; */
+    grid-template-columns:repeat(3,1fr);
+}
+
+/* .about-container{
+    flex-direction:column;
+} */
+
+.about-text,
+.about-image{
+    width:100%;
+}
+
+.about-image img{
+    width:100%;
+}
+
+footer p{
+    font-size:12px;
+    line-height:22px;
+}
+
+}
+@media (max-width:480px){
+
+header{
+    padding:15px;
+}
+
+.logo h2{
+    font-size:20px;
+}
+
+nav ul li a{
+    font-size:15px;
+}
+
+.hero{
+    min-height:250px;
+}
+
+.content h3{
+    font-size:15px;
+}
+
+.content h1{
+    font-size:22px;
+    letter-spacing:2px;
+}
+
+.products{
+    width:95%;
+}
+
+.product-heading h3{
+    font-size:20px;
+}
+
+.product-heading a{
+    font-size:12px;
+}
+
+.title-price{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:5px;
+}
+
+.rating{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:5px;
+}
+
+.about{
+    width:95%;
+}
+
+.about h2{
+    font-size:20px;
+}
+
+.about-text h3{
+    font-size:18px;
+}
+
+.about-text p,
+.about-text ul li{
+    font-size:14px;
+}
+
+.about-text button{
+    width:100%;
+}
+
+footer{
+    width:95%;
+}
+
+footer p{
+    font-size:11px;
+}
+
 }
