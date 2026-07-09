@@ -70,6 +70,11 @@ li:nth-child(even) {
   text-align: center;
   line-height: 50px;
 }
+.mask1{
+    -webkit-mask-image: url("https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/developer-communities/w3-kevaurzl97zw2676nb0nc.png/w3-cubl13iejg7muh18jdgwcs.png?_a=DATAiZkSZAA0");
+  mask-image: url("https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/developer-communities/w3-kevaurzl97zw2676nb0nc.png/w3-cubl13iejg7muh18jdgwcs.png?_a=DATAiZkSZAA0");
+  mask-repeat: no-repeat;
+}
 
 
 

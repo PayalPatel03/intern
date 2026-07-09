@@ -1,0 +1,80 @@
+body{
+    background: url("https://avatars.mds.yandex.net/i?id=43c2af78594eedcb2c5ed95124a747ddcdb243bc-10787799-images-thumbs&n=13");
+    background-size: cover;
+}
+
+
+.navbar ul{
+    list-style-type:none;
+    background: transparent;
+    backdrop-filter: blur(50px);
+    padding: 0px;
+    margin: -10px;
+    overflow: hidden;
+    border-radius: 10px;    
+}
+
+.navbar a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-align: left;
+  padding: 15px;
+  display: block;
+  text-transform:capitalize;
+  font-weight: bolder;
+  font-size: large;
+}
+
+.navbar a:hover{
+
+    background-color: rgb(84, 84, 84);
+    border-radius: 10px;
+}
+
+.navbar li{
+    float: left;
+}
+
+#img1{
+    float: left;
+    margin: 2%;
+    margin-top: 0%;
+    border-radius: 10px;
+    width: 35%;
+    height: 55%;
+}
+
+#img2{
+    margin-left: 40%;
+}
+
+.paragraph{
+    height: auto;
+    width:auto;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(40px);
+    color: white;
+    border-radius: 20px;
+    margin-top: 5%;
+    padding: 5%;
+    font-size: large;
+}
+
+#img3{
+ float: right;
+ width: 35%;
+ height: 55%;
+ margin: 5%;
+ border-radius: 10px;
+}
+
+#paragraph2{
+    margin-left: 5%;
+    font-size: large;
+}
+
+.h1{
+    text-align: center;
+    text-transform: capitalize;
+}
