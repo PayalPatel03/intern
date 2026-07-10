@@ -291,3 +291,138 @@ nav ul li a:hover{
     border: 1px solid black;
     color: black;
 }
+
+/*subscribe*/
+.subscribe{
+    background-color: #d4ced0;
+    text-align: center;
+    margin-top: 50px;
+    height: 300px;
+}
+.sub h4{
+    padding: 30px;
+    font-size: 25px; 
+}
+.sub p{
+    font-size: 15px;
+    color: rgb(86, 83, 83);
+}
+.sub input{
+    width: 40%;
+    border: none;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.sub button{
+    background-color: red;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+  font-size: 24px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  
+}
+.sub button::after{
+    content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+.sub button:active::after{
+     padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+.sub button:hover{
+    /* background-color: transparent; */
+    /* color: red; */
+    border: 1px solid red;
+    
+}
+
+/*testimonial*/
+.testimonial{
+    margin-top: 40px;
+    text-align: center;
+}
+.testimonial-heading h2{
+    text-align: center;
+}
+.testimonial-heading hr{
+     border: 1px solid red;
+    width: 50px;
+    margin-top: 5px;
+    text-align: center;
+    position: relative;
+    left: 350px;
+    margin-bottom: 20px;
+}
+.testimonial-content img{
+    border-radius: 50%;
+    height: 100px;
+}
+.name{
+    font-style: italic;
+    font-weight: bold;
+}
+.designation{
+    color: grey;
+    font-size: 13px;
+}
+.information{
+    font-size: 15px;
+}
+
+/*footer*/
+footer ul li{
+    margin-top: 5px;
+    font-size: 10px;
+    list-style: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+footer{
+    margin-top: 30px;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content:space-around;
+}
+li b{
+    font-weight: bolder;
+}
+li input{
+    border: 2px sloid beige;
+}
+li form button{
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 5px;
+}
+li form button:hover{
+    background: transparent;
+    border: 1px solid red;
+    color: red;
+}
+.foot{padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+.foot a{
+    text-decoration: none;
+    color: red;
+    
+}
