@@ -5,16 +5,13 @@
 }
 /*header*/
 header{
-    /* background-color: antiquewhite; */
-     width:100%;
+    width:100%;
     min-height:40px;    
     display:flex;
     justify-content:space-around;
     align-items:center;
-    
 }
 .logo img{
-    /* padding: 20px; */
     margin: 10px;
      height:40px;
      width: 140px;
