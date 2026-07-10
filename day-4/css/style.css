@@ -236,6 +236,7 @@ nav ul li a:hover{
 
 .overlay-product {
     position: absolute;
+    
     bottom: 100%;
     left: 0;
     width: 100%;
