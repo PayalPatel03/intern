@@ -274,7 +274,7 @@ footer span{
     color:#f33f3f;
 }
 
-/*media query*/
+/*--------------------media query-------------*/
 @media (max-width:992px){
 
 header{
@@ -294,7 +294,7 @@ nav ul{
 }
 
 .container{
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:repeat(3,1fr);
      /* grid-template-columns:1fr; */
 }
 
@@ -344,7 +344,7 @@ nav ul{
 
 .container{
     /* grid-template-columns:1fr; */
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(2,1fr);
 }
 
 /* .about-container{
@@ -370,6 +370,7 @@ footer p{
 
 header{
     padding:15px;
+    
 }
 
 .logo h2{
@@ -379,7 +380,10 @@ header{
 nav ul li a{
     font-size:15px;
 }
-
+.container{
+    /* grid-template-columns:1fr; */
+    grid-template-columns:repeat(1,1fr);
+}
 .hero{
     min-height:250px;
 }
