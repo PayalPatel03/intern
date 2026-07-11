@@ -3,9 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    overflow: hidden;
-}
+
 /*header*/
 .navbar .btn{
     background-color: #fe5c24;
@@ -16,6 +14,10 @@ body{
 .sticky-top{
     background-color: white;
 }
+.nav-link{
+color: rgb(64, 64, 86);
+}
+
 .nav-link:hover{
     color: #fe5c24;
 }
@@ -25,7 +27,7 @@ body{
     min-height:600px;
     background:url("/bootstrp-template/images/banner_bg.png") center center/cover no-repeat;
     position:relative;
-    overflow: hidden;
+    
 }
 
 .overlay{
@@ -61,4 +63,14 @@ body{
 }
 .content .btn:hover{
     background-color: #fe5c24;
+}
+/*top places*/
+.top{
+    text-align: center;
+}
+.top h2{
+    color: #0c3e72;;
+}
+.top p{
+   color: #777777;
 }
