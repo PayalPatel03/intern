@@ -4,8 +4,6 @@ body{
      justify-content: center;
      background:linear-gradient(45deg, rgb(0, 0, 0), rgb(214, 211, 223),  rgb(0, 0, 0));
 }
-
-
 .chessboard{
     margin-top: 50px;
     margin-bottom: 50px;
@@ -22,7 +20,7 @@ body{
     width:calc(100%/8);
     font-size: 60px;
     text-align: center;
-    text-shadow: 2px 1px white ;
+    text-shadow: 5px 1px white ;
 }
 
 .a{
