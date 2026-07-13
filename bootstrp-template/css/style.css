@@ -107,6 +107,7 @@
   inset: 0;
   background: rgba(0, 63, 105, 0.75);
   opacity: 0;
+  /* background: transparent; */
   visibility: hidden;
   transition: all 0.5s ease;
 }
@@ -147,11 +148,13 @@
 .travel-content h2 {
   font-size: 40px;
   margin-bottom: 5px;
+  color: white;
 }
 
 .travel-content p {
   font-size: 22px;
   margin-bottom: 20px;
+  color: white;
 }
 
 .rating {
@@ -403,6 +406,7 @@
   width: 80%;
   height: 50px;
   background: #082847;
+  /* background: red; */
   border: none;
   padding: 15px;
   color: white;
@@ -414,25 +418,19 @@
   background: #fe5c24;
   color: white;
 }
-
 .footer p {
   font-size: 14px;
 }
-
 .email {
   color: #fe5c24;
   cursor: pointer;
 }
-
 .social-icons{
     margin-top: 20px;
     gap: 10px;
     display: flex;
     cursor: pointer;
 }
-/* .social-icons:hover{
-    color: #fe5c24;
-} */
  .bi-facebook:hover{
     color: #fe5c24;
  }
@@ -446,10 +444,8 @@
     color: #fe5c24;
  }
 
-
-
 /*media query*/
-/* ================= LARGE TABLET ================= */
+/* ================= Laptop ================= */
 
 @media (max-width: 992px) {
   .hero {
@@ -512,10 +508,9 @@
     font-size: 16px;
   }
 
-
 }
 
-/* ================= TABLET ================= */
+/* ================= Tablet ================= */
 
 @media (max-width: 768px) {
   .hero {
@@ -542,7 +537,7 @@
   }
 }
 
-/* ================= MOBILE ================= */
+/* ================= Mobile ================= */
 
 @media (max-width: 576px) {
   .hero {
@@ -694,7 +689,7 @@
 
 }
 
-/* ================= SMALL MOBILE ================= */
+/* ================= Small sized mobile ================= */
 
 @media (max-width: 375px) {
   .hero {
@@ -722,11 +717,7 @@
   .event-card {
     padding: 25px 20px;
   }
-
   .event-card h2 {
     font-size: 23px;
   }
-
- 
-
 }
