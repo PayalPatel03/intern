@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <h1>Hello Javascript</h1>
+    <h2 id="first" style="color: brown;"></h2>
+    <h3>Hello Coders</h3>
+  </body>
+
+  <script>
+    document.getElementById("first").innerHTML = "<h2>Heloo</h2>";
+    // window.alert('Straing js!!')
+    // console.log("Payal ");
+    // document.write(5+8);
+
+    let x = 3;
+    let y = 10;
+    let day;
+    let date = new Date().getDay();
+
+    if (x > y) {
+      document.write("x" + x + "is gerater");
+    } else {
+      document.write(y + " is gerater than " + x);
+    }
+
+    switch (date) {
+      case 0:
+        day = "Sunday";
+        break;
+      case 1:
+        day = "Monday";
+        break;
+      case 2:
+        day = "Tuesday";
+        break;
+      case 3:
+        day = "Wednesday";
+        break;
+      case 4:
+        day = "Thursday";
+        break;
+      case 5:
+        day = "Friday";
+        break;
+      case 6:
+        day = "Saturday";
+    }
+
+    document.getElementById("first").innerHTML = "Today is " + day;
+    
+   
+</script>
+  </script>
+</html>
