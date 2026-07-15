@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <style>
+    body{
+        background-color: pink;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+  </style>
+
+  <body>
+    <div>
+      <h1 class="text-center fs-1 fw-bold">Counter</h1>
+      <p id="para" class="text-center fw-semibold fs-3"></p>
+      <button id="button1" class="btn btn-secondary" onclick="bu1()">Add Count</button>
+      <button id="button2" class="btn btn-secondary">Lower Count</button>
+    </div>
+
+    <script>
+      document.getElementById("para").innerText = 0;
+
+      function numberCounter() {
+        if (Number(document.getElementById("para").innerText) > 0) {
+          document.getElementById("para").style.color = "green";
+        } else if (Number(document.getElementById("para").innerText) < 0) {
+          document.getElementById("para").style.color = "red";
+        } else if (Number(document.getElementById("para").innerText) == 0) {
+          document.getElementById("para").style.color = "white";
+        }
+      }
+      //using call back functions
+      document.getElementById("button1").addEventListener("click", ()=>{
+         document.getElementById("para").innerText =
+          Number(document.getElementById("para").innerText) + Number(1);
+        numberCounter();
+      });
+
+    //using IIFE
+    document.getElementById("button2").addEventListener("click",(function (){
+        document.getElementById("para").innerText=
+        Number(document.getElementById("para").innerText) - Number(1);
+        numberCounter();
+    }));
+    </script>
+  </body>
+</html>

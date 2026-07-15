@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="obj"></p>
+
+
+    <script>
+    // const pen={
+    //     colorr:"blue",
+    //     bodyColor:"purple",
+    //     comapny:"Flair",
+    //     prize:5,
+    // };
+    // document.getElementById("obj").innerText="Pen details : Color::"+ pen.bodyColor;
+
+    //using empty object
+    // const pen={};
+    // pen.color="Blue";
+    // pen.bodyColor="purple";
+
+    // document.getElementById("obj").innerText="Pen details : Color::"+ pen.color;
+
+    //-------------nested objects-----------------------
+    // const car={
+    //     name:"Swift",
+    //     launch:2017,
+    //     person:{
+    //         surname:"Patel",
+    //         age:53,
+    //     }
+    // }
+    //  document.getElementById("obj").innerText="Car details: " + car.person.surname+ " Peson age: "+ car.person.age;
+
+    //-------object methods assign()---------------------
+//     const person1 = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   age: 50,
+//   eyeColor: "blue"
+// };
+
+
+// const person2 = {firstName: "Anne",lastName: "Smith"};
+
+
+// Object.assign(person1, person2);
+// let text = Object.entries(person1);
+// document.getElementById("obj").innerHTML = text;
+
+const user = {
+  name: "Alice",
+  age: 28,
+  role: "Admin"
+};
+
+const entries = Object.entries(user);
+console.log(entries);
+
+let d=new Date();
+
+document.write(d);
+
+  
+</script>
+    
+</body>
+</html>
