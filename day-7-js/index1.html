@@ -65,6 +65,14 @@ let d=new Date();
 
 document.write(d);
 
+//-----using temporal-------
+
+const today = Temporal.Now.plainDateISO();
+
+const nextWeek = today.add({ days: 7 });
+ 
+document.getElementById("obj").innerHTML = "Next week is " + nextWeek.toString();
+
   
 </script>
     
