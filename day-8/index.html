@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content-box">
+  <p>This is the <strong>original</strong> content.</p>
+</div>
+
+<button onclick="updateContent()">Change Content</button>
+
+<!--querySelector-->
+<h1 id="main-title">Welcome to My Site</h1>
+<p class="text">This is the first paragraph.</p>
+<p class="text">This is the second paragraph.</p>
+
+
+    
+    
+
+<script>
+
+    function updateContent() {
+  const box = document.getElementById("content-box");
+  console.log(box.innerHTML); 
+  box.innerHTML = "<h3>Success!</h3><p>The content has been updated.</p>";
+}
+
+//query selector
+// 1. Find the element
+ const firstParagraph = document.querySelector('.text');
+
+
+// 2. Change its text content
+firstParagraph.textContent = 'Hello World!';
+
+
+
+//     setInterval(()=>{
+//         console.log("Runs after 3 sec!");
+    
+        
+//     },3000);
+
+//     setTimeout(()=>{
+// console.log("SET timeout after 2 sec..");
+
+//     },2000)
+
+// function checkAge(age) {
+//   try {
+//     if (age <18) {
+//       throw new Error("You must be 18 or older."); 
+//     }
+//     console.log("Access granted.");
+//   } catch (error) {
+//     console.error("Access denied:", error.message);
+//   } finally {
+    
+//     console.log("Age verification check complete."); 
+//   }
+// }
+
+// checkAge(15);
+
+window.console.log("hello");
+console.log(document);
+console.log(window);
+
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
