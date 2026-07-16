@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo"></p>
+</body>
+</html>
+
 <script>
   //-----------array length----------
   // let arr = [10, 20, 30, 40, 50,60];
@@ -79,7 +91,20 @@
     
 
     //--------Filter method---------
-     let arr = [5, 10, 15, 20, 25];
-    let oddNumbers = arr.filter(num => num % 2 !== 0);
-    console.log(oddNumbers);
+    //  let arr = [5, 10, 15, 20, 25];
+    // let oddNumbers = arr.filter(num => num % 2 !== 0);
+    // console.log(oddNumbers);
+
+    async function loadText(file) {
+  const response = await fetch(file);
+  myDisplayer(response.ok);
+}
+
+// Call the async function
+loadText("fetch.txt");
+
+// Function to display any text
+function myDisplayer(text) {
+  document.getElementById("demo").innerHTML = text;
+}
 </script>

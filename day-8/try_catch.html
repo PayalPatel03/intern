@@ -1,0 +1,76 @@
+<script>
+    //syantax
+    // try {
+
+    // } catch (error) {
+
+    // }finally{
+
+    // }
+
+    //basic example
+    // try{
+    //     throw "Error occured..";
+    // }
+    // catch(error){
+    //     console.log("Caught Error:"+error);
+
+    // }
+
+    //Handling Multiple Exceptions
+    // try {
+    //     let num = parseInt("DEV");
+    //     if (isNaN(num)) {
+    //         throw new Error("Invalid number format");
+    //     }
+    // } catch (error) {
+    //     console.log("Error:", error.message);
+    // }
+
+    // Using Finally Block
+    // try{
+    //     console.log("Try block");
+    // }catch(error){
+    //     console.log("Error caught"); 
+    // }finally{
+    //     console.log("Finally block"); 
+    // }
+
+    //Division by Zero Exception
+    let divide=(x,y)=>{
+        if(y==0){
+            throw new Error("Division by zero is not allowded");
+        }
+        return x/y;
+    }
+    try{
+        console.log(divide(6,0));
+    }catch(error){
+        console.log("Exception:", error.message);
+    }
+
+    //SYNATX ERROR
+    // console.log("Hello";
+
+    //REFRENCE ERROR
+    // console.log(variable);
+
+   // TYPE ERROR
+    // let num=7;
+    // num();
+
+    //RANGE ERROR
+    // let arr=new Array(-1);
+
+    //LOGICAL ERROR
+    function add(a, b) {
+        return a - b; 
+    }
+    console.log(add(3,5)); 
+
+
+
+
+
+
+</script>
