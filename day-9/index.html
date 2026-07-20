@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Fetch API</h2>
+    <script>
+        async function fetchData() {
+            try {
+                const res=await fetch('https://dummyjson.com/products');
+                if(!res.ok){
+                    throw new Error(`HTTP error! Status: ${res.status}`);
+                }
+                const data=await res.json();
+                console.log('Success',data);
+            } catch (error) {
+                console.log(error.message);   
+            }   
+        }
+        fetchData();
+    </script>
+</body>
+</html>
