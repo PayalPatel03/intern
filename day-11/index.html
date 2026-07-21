@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Feature</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"/>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div style="height: 1500px; padding: 20px;">
+        <h1>Scroll Down to See the Button</h1>
+        <p>Scroll down to make the "Scroll to Top" button appear.</p>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn" class="btn btn-primary display-flex flex-end">
+        <i class="fa-solid fa-caret-up"></i>
+    </button>
+    
+
+    <script>
+        // Select the scroll-to-top button
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+// Show the button when scrolling down 300px
+window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        scrollTopBtn.classList.add("show");
+    } else {
+        scrollTopBtn.classList.remove("show");
+    }
+};
+
+// Scroll to the top when the button is clicked
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+    </script>
+</body>
+</html>

@@ -22,12 +22,13 @@ let validate = () => {
     }
 
     //password
-    if (password.value.trim() === "") {
+    if(password.value.trim()===""){
         document.querySelector('.passwordError').classList.remove('d-none');
     }
-    else {
-        document.querySelector('.passwordError').classList.add('d-none');
+    else{
+        document.querySelector('passwordError').classList.add('d-none');
     }
+    
 
 
 }
